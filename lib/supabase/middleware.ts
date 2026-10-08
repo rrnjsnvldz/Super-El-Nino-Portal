@@ -40,7 +40,13 @@ export async function updateSession(request: NextRequest) {
                         request.nextUrl.pathname.startsWith('/reset-password') ||
                         request.nextUrl.pathname === '/' ||
                         request.nextUrl.pathname.startsWith('/advisories') ||
-                        request.nextUrl.pathname.startsWith('/map')
+                        request.nextUrl.pathname.startsWith('/map') ||
+                        request.nextUrl.pathname.startsWith('/overview') ||
+                        request.nextUrl.pathname.startsWith('/alerts') ||
+                        request.nextUrl.pathname.startsWith('/weather') ||
+                        request.nextUrl.pathname.startsWith('/metrics') ||
+                        request.nextUrl.pathname.startsWith('/personnel') ||
+                        request.nextUrl.pathname.startsWith('/settings')
 
   if (
     !user &&
